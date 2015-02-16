@@ -5,10 +5,7 @@ class StaticPagesController < ApplicationController
   def help
   end
 
-  def button
-    @button = "hello yochiyochi"
-  end
-
   def hello
+    @button = "hello yochiyochi"
   end
 end

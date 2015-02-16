@@ -1,7 +1,6 @@
 Yochigaya::Application.routes.draw do
   root 'static_pages#home'
-  post '/', to: 'static_pages#home'
-  get '/hello', to: 'static_pages#hello'
+  post '/', to: 'static_pages#hello'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
