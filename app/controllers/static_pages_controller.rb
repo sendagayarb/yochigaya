@@ -3,7 +3,7 @@ class StaticPagesController < ApplicationController
   end
 
   def show
-    @items = 'Hello world'
+    @items = '＼(^o^)／'
   end
 
   def help
