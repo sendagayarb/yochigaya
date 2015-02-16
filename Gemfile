@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 #ruby-gemset=yochigaya
 
 gem 'rails', '~> 4.0.0'
-gem 'cowsay'
+gem 'ruby_cowsay'
 
 group :development, :test do
   gem 'sqlite3'
