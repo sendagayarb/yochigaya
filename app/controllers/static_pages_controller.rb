@@ -7,6 +7,7 @@ class StaticPagesController < ApplicationController
   end
 
   def cowsay
-    render text:"hello world"
+    words = %w(seito sueyoshi)
+    @cowsay = Cowsay.new(word: words.sample)
   end
 end
