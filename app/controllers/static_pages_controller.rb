@@ -6,5 +6,8 @@ class StaticPagesController < ApplicationController
   end
 
   def hello
+  	clnt = HTTPClient.new
+  	target = "https://raw.githubusercontent.com/yochiyochirb/meetups/master/README.md"
+  	@result = clnt.get(target)
   end
 end
