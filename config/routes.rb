@@ -1,5 +1,5 @@
 Yochigaya::Application.routes.draw do
-  get "messages/index"
+  resources :messages, only: :index
   root 'static_pages#home'
   get 'static_pages/help'
   # The priority is based upon order of creation: first created -> highest priority.
