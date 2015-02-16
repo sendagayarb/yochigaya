@@ -1,0 +1,7 @@
+<%= form_for @cowsay, url:"/static_pages/cowsay" do |f| %>
+  <%= f.submit value="ボタン" %>
+<% end %>
+
+<pre>
+  <%= @cowsay.exec %>
+</pre>
