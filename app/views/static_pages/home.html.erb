@@ -1,3 +1,7 @@
-<form>
-  <button>ボタン</button>
-</form>
+<% if @input && (@result != "invalid expression!")%>
+  <p> <%= @input %> = <%= @result %> </p>
+<% end %>
+<%= form_tag static_pages_calculate_path do %>
+  <%= text_field_tag 'expression', @result, placeholder: 'expression here' %>
+  <%= submit_tag 'calculate' %>
+<% end %>
