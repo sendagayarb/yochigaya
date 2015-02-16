@@ -1,6 +1,10 @@
 Yochigaya::Application.routes.draw do
   root 'static_pages#home'
   get 'static_pages/help'
+
+  resources :ramen, only: ['index'] do
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
